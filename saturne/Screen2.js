@@ -1,13 +1,18 @@
-import { Text, View } from 'react-native';
+import { Text, View, TextInput } from 'react-native';
 
+import MyButton from './Button';
 import { styles } from './MyStyle';
 
-export default function Screen2 () {
+export default function Screen2 ({navigation}) {
     return (
-        <View style={styles}>
+        <View style={styles.container}>
             <Text>
-                Bienvenue dans mon monde
+                Base
             </Text>
+            <TextInput style={styles.text}></TextInput>
+
+            <MyButton content={'Convertir'} style={styles.button} change={'Screen1'} navigation={navigation} />
+            <MyButton content={'Voir taux'} style={styles.button}  change={'Screen2'} navigation={navigation}/>
         </View>
     );
 }

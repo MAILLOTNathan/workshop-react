@@ -7,15 +7,19 @@ export default function Screen1 ({navigation}) {
     return (
         <View style={styles.container}>
             <Text>
-                Que veux-tu visiter comme planete ?
+                Base
             </Text>
-            <TextInput style={styles.text}>Saisi ici la planete</TextInput>
-            <MyButton content={"wesh"} style={styles.button} />
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Profile')}>
-                <Text>
-                    change
-                </Text>
-            </TouchableOpacity>
+            <TextInput style={styles.text}></TextInput>
+            <Text>
+                Amount
+            </Text>
+            <TextInput style={styles.text}></TextInput><Text>
+                To
+            </Text>
+            <TextInput style={styles.text}></TextInput>
+
+            <MyButton content={'Convertir'} style={styles.button} change={'Screen1'} navigation={navigation} />
+            <MyButton content={'Voir taux'} style={styles.button}  change={'Screen2'} navigation={navigation}/>
         </View>
     );
 }

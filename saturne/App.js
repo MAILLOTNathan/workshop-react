@@ -11,11 +11,11 @@ export default function App() {
     <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen
-            name="Home"
+            name="Screen1"
             component={Screen1}
             options={{title: 'Welcome'}}
             />
-            <Stack.Screen name="Profile" component={Screen2} options={{title: 'NoWelcome'}} />
+            <Stack.Screen name="Screen2" component={Screen2} options={{title: 'NoWelcome'}} />
         </Stack.Navigator>
     </NavigationContainer>
   );
